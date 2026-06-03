@@ -1,5 +1,6 @@
 {
   "name": "javadoc",
+  "displayName": "JavaDoc Generator",
   "description": "Generate and update JavaDoc following Oracle and Atlassian conventions (JDK 25-aware).",
   "version": "1.0.0",
   "author": {
