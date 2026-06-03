@@ -1,7 +1,8 @@
 ---
 name: javadoc
 description: Generate or update JavaDoc comments following Oracle's "How to Write Doc Comments for the Javadoc Tool" and Atlassian's Confluence Javadoc standards, with modern JDK (records, sealed types, {@snippet}, inline {@return}). Use when asked to document Java code — a class, method, interface, enum, record, package, file, or set of changes — or to add/fix Javadoc to meet a documentation standard. Documents the full public/protected API thoroughly; skips private internals and pure signature-paraphrases.
-allowed-tools: Read Edit Glob Grep Bash(git diff:*) Bash(git fetch:*)
+argument-hint: [file | class | package | diff]
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash(git fetch:*), Bash(git diff:*), Bash(javadoc:*)
 ---
 
 # javadoc
@@ -138,7 +139,7 @@ Full detail and examples in `patterns.md`; the high-frequency rules:
 - Re-read every comment you wrote against the first-sentence rule and the Step 3 balance — delete or tighten any that ended up as pure paraphrase.
 - Optionally lint with the standard Javadoc doclint (catches malformed tags, bad references, missing `@param`/`@return`):
   ```
-  javadoc -Xdoclint:all -d /tmp/jd <files>
+  javadoc -Xdoclint:all -d <scratch-dir> <files>   # -d points anywhere throwaway; doclint runs regardless of OS
   ```
   or rely on the project's own check (Checkstyle's `JavadocMethod`/`SummaryJavadoc`, an IDE's Javadoc inspection). Surface warnings rather than silencing them.
 - Final pass: review the diff to confirm you changed **only** doc comments (and the members you intended), not surrounding code, formatting, or private internals.
