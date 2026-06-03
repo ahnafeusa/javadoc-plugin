@@ -1,0 +1,13 @@
+{
+  "name": "javadoc",
+  "description": "Generate and update JavaDoc following Oracle and Atlassian conventions (JDK 25-aware).",
+  "version": "1.0.0",
+  "author": {
+    "name": "Eusa",
+    "email": "eusa@galateatech.com"
+  },
+  "homepage": "https://github.com/REPLACE_ME/javadoc-plugin",
+  "repository": "https://github.com/REPLACE_ME/javadoc-plugin",
+  "license": "MIT",
+  "keywords": ["java", "javadoc", "documentation", "oracle", "atlassian", "jdk25"]
+}

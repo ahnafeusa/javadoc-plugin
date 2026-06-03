@@ -1,0 +1,19 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "javadoc-tools",
+  "owner": {
+    "name": "Eusa",
+    "email": "eusa@galateatech.com"
+  },
+  "description": "JavaDoc generation tooling for Claude Code.",
+  "plugins": [
+    {
+      "name": "javadoc",
+      "source": "./",
+      "description": "Generate and update JavaDoc following Oracle and Atlassian conventions (JDK 25-aware).",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["java", "javadoc", "documentation"]
+    }
+  ]
+}
