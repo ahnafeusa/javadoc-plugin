@@ -6,8 +6,8 @@
     "name": "Eusa",
     "email": "eusa@galateatech.com"
   },
-  "homepage": "https://github.com/REPLACE_ME/javadoc-plugin",
-  "repository": "https://github.com/REPLACE_ME/javadoc-plugin",
+  "homepage": "https://github.com/ahnafeusa/javadoc-plugin",
+  "repository": "https://github.com/ahnafeusa/javadoc-plugin",
   "license": "MIT",
   "keywords": ["java", "javadoc", "documentation", "oracle", "atlassian", "jdk25"]
 }
